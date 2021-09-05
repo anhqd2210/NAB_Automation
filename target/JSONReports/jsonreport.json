@@ -1,0 +1,112 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2021-09-05T22:21:17.681Z",
+        "before": [
+          {
+            "result": {
+              "duration": 2839000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinitions.StepsTest.beforeScenario()"
+            }
+          }
+        ],
+        "line": 12,
+        "name": "Search weather in your city",
+        "description": "",
+        "id": "search-weather-in-your-city;search-weather-in-your-city;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 792000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinitions.StepsTest.afterScenario()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 9583000000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "User navigates to https://openweathermap.org/",
+            "match": {
+              "arguments": [
+                {
+                  "val": "https://openweathermap.org/",
+                  "offset": 18
+                }
+              ],
+              "location": "stepDefinitions.StepsTest.user_navigates_to(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 83000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Verify that Search box is display",
+            "match": {
+              "location": "stepDefinitions.StepsTest.Verify_that_Search_box_is_display()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1940000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User searches for keyword Ho Chi Minh city",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Ho Chi Minh city",
+                  "offset": 26
+                }
+              ],
+              "location": "stepDefinitions.StepsTest.User_searches_for_keyword(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 255000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Verify that user should see Thanh pho Ho Chi Minh, VN",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Thanh pho Ho Chi Minh, VN",
+                  "offset": 28
+                }
+              ],
+              "location": "stepDefinitions.StepsTest.Verify_that_user_should_see(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Search weather in your city",
+    "description": "",
+    "id": "search-weather-in-your-city",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/Features/NABSearch.feature",
+    "tags": []
+  }
+]
